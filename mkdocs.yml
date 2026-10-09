@@ -2,7 +2,10 @@ site_name: iDMS Documentation
 site_description: Official architecture and user manuals for the iDMS ecosystem.
 site_author: RIVM
 #A site url would be implicitly added to all internal links (e.g. images)!
+#also would break when mirroring to GitHub. So keep all links relative!
 #site_url: https://github.com/rivm-syso/idms_docs 
+#site_url: !ENV [SITE_URL, "http://127.0.0.1:8000/"]
+#use_directory_urls: true
 
 repo_name: iDMS_docs
 repo_url: https://github.com/rivm-syso/idms_docs 
