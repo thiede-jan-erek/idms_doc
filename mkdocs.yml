@@ -1,0 +1,95 @@
+site_name: iDMS Documentation
+site_description: Official architecture and user manuals for the iDMS ecosystem.
+site_author: RIVM
+#A site url would be implicitly added to all internal links (e.g. images)!
+#site_url: https://github.com/rivm-syso/idms_docs 
+
+repo_name: iDMS_docs
+repo_url: https://github.com/rivm-syso/idms_docs 
+
+# Theme configuration
+theme:
+  name: material
+  logo: "!assets/images/favicon-96x96.png"
+  #favicon: assets/images/favicon.ico
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - mermaid2
+
+# Extensions for advanced formatting (code blocks, callouts, tables)
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+       - name: mermaid
+         class: mermaid
+         format: !!python/name:pymdownx.superfences.fence_code_format
+
+# REQUIRED for Mermaid to render in the browser:
+#extra_javascript:
+#  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+
+# Sidebar Navigation Structure
+nav:
+  - Home: index.md
+  - Introduction:
+      - Overview: introduction/overview.md
+      - Architecture: introduction/architecture.md
+      - Licensing: introduction/licensing.md
+
+  - User Manual:
+      - Getting Started: introduction/irods.md
+      - iRODS in windows explorer: user-manual/access_irods_from_windows_explorer.md
+      - Starting a new project: user-manual/starting_a_new_project
+      - Add metadata to project: user-manual/adding_metadata_to_a_project.md
+    #  - Manual upload in iDMS: user-manual/
+    #  - Use iget to get data from irods: user-manual/
+    #  - Mount irods project on the headnodes: user-manual/
+    #  - Using data with Python, R or Snakemake: user-manual/
+    #  - Find a fastq file with sample ID: 
+
+  - Administrators:
+      - Deployment & Infrastructure: administrators/deployment.md
+    #  - iRODS & Persistence: administrators/irods-setup.md
+
+  - Developers:
+      - Contributing Guide: developers/contributing.md
+    #  - API Reference: developers/api-reference.md
+
+  - Courses:
+      - "🔒 Step into data management with iRODS: Your first iRODS journey with iDMS": https://rivm.capp12.nl/events/537
+      - "🔒 Mastering iRODS iDMS: Dive deeper into iRODS with iDMS web interface": https://rivm.capp12.nl/events/538
+      - "🔒 iRODS beyond basics: Automated data processing and data management workflows (Self-study)": https://gitlab.rivm.nl/bioinformatics/docs/-/wikis/iRODS_course/beyond_basics
