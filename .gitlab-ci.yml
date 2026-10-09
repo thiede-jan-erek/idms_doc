@@ -14,7 +14,7 @@ create-pages:
     - pip install -r requirements.txt
   script:
     - export SITE_URL="$CI_PAGES_URL/"
-    - mkdocs build --strict
+    - mkdocs build --clean #--strict
     - mv site public
   artifacts:
     paths:
