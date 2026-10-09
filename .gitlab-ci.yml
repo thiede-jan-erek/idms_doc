@@ -1,0 +1,18 @@
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  image: python:3.11-slim
+  before_script:
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
+  script:
+    - export SITE_URL="$CI_PAGES_URL/"
+    - mkdocs build --strict
+    - mv site public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
