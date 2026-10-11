@@ -4,6 +4,7 @@ An iRODS project is a group of people managing and contributing to a collection 
 
 ## Creating a project
 To create a new project, contact one of us (see the [home page](home)), and we will create one for you. We will need you to provide us with the following necessary information:
+
  - a clear and discernible project name. No spaces or special characters are allowed, except for underscores. Maximum of 24 characters. We advice not to use group/institu names or very generic names. 
  - a list of [managers](#users-and-managers) of the project. Managers can add users. 
  - a primary contact person who is responsible for or owner of the data (stored in the contacts list and in the metadata of the project)
@@ -11,8 +12,8 @@ To create a new project, contact one of us (see the [home page](home)), and we w
     - This is so we know how to store/archive the data and for how long
  - [metadata schemata](/DMS/Manual-upload-in-iDMS#metadata-schemata) for the datasets (description of the minimal metadata on each collection)
     - For FAIRness of the data
-    - Findability in the metadata catalogue
-      - Fill the **Project Metadata** form _rivm.json_ for your project, and the metadata will be harvested by the catalogue (see [here](/DMS/catalog_metadata) for more information).
+    - Findability in the metadata catalogue:
+      Fill the **Project Metadata** form _rivm.json_ for your project, and the metadata will be harvested by the catalogue (see [here](/DMS/catalog_metadata) for more information).
     - So uploading the data with metadata can be done via a [metadata json form](/DMS/Manual-upload-in-iDMS) on iDMS.
     - If you know .json format, you can look at examples files in [iDMS](biorods.rivm.nl) > Collection Browser > system > schemata > datasets > example_project (/rivmZone/system/schemata/datasets/example_project).
 
@@ -32,6 +33,7 @@ Pipelines in the DMS can be started automatically when new collections arrive in
 
 ### Dataset Default Metadata
 This tab can be used to prefill the metadata json files used for dataset uploads with default information.
+
 - rivm.json: Metadata for the central RIVM catalogue (apollo.rivm.nl). After filling the required minimal set of fields in dataset uploads the dataset metadata will be harvested by the catalogue.
 - default.json: prefilled metadata template for metadata to be added to dataset uploads.  Multiple json files can be specified here, and selected and filled during a data upload: [Data Uploads](DMS/Manual-upload-in-iDMS).
 

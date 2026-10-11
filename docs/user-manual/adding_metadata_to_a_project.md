@@ -1,12 +1,12 @@
 ## Metadata on Projects and Datasets
 
-Once a project is started [(see how)](/DMS/starting-a-new-project), it is time to add metadata.
+Once a project is started [(see how)](../starting_a_new_project), it is time to add metadata.
 
 Metadata can apply to three levels:
 
-1) RIVM level: General metadata applying to all datasets or projects in the RIVM. This metadata is automatically harvested by the metadata catalogue
-2) Project level: General metadata applying to all projects, for example project responsible.
-3) Project Specific level: Specific metadata only for your project.
+1. RIVM level: General metadata applying to all datasets or projects in the RIVM. This metadata is automatically harvested by the metadata catalogue
+2. Project level: General metadata applying to all projects, for example project responsible.
+3. Project Specific level: Specific metadata only for your project.
 
 There are two types of metadata on a project, with two corresponding tabs in the Projects page. Both pages display the available metadata schemata on the left and the metadata editor tool on the right of the screen.
 
@@ -18,7 +18,7 @@ They can be found in the Project Details page in 2 tabs:
 ### Project Metadata
 Project metadata is metadata about the project. It can be used for making your project better findable, or [FAIR](https://www.go-fair.org/fair-principles/).
 The **rivm** schema contains metadata used in the metadata catalogue.
-For more information about the connection between Apollo (the RIVM data catalogue) and iRods, see [here](/DMS/catalog_metadata).
+For more information about the connection between Apollo (the RIVM data catalogue) and iRods, see [here](../catalog_metadata).
 
 ### Dataset Default Metadata
 Dataset Default metadata can be used as a template for metadata of uploaded datasets. There are no required fields for schemata in this tab, because metadata can differ per uploaded dataset
@@ -49,5 +49,5 @@ After filling the required information press 'Save' (5) to store the metadata on
 > !! Beware: unselecting a schema in the metadata editor wil remove the metadata from the collection (after being warned in the iDMS)
 
 
-If you have any questions about this, reach out to [us](home), or email to onderzoeksendataloket@rivm.nl.
+If you have any questions about this, reach out to onderzoeksendataloket@rivm.nl.
 

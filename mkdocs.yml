@@ -7,8 +7,19 @@ site_author: RIVM
 #site_url: !ENV [SITE_URL, "http://127.0.0.1:8000/"]
 #use_directory_urls: true
 
-repo_name: iDMS_docs
-repo_url: https://github.com/rivm-syso/idms_docs 
+#Dont show this, important are the 7 code-repos...
+#repo_name: iDMS_docs
+#repo_url: https://github.com/rivm-syso/idms_docs 
+
+extra:
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.example.com/rivm-syso/idms_docs
+      name: Internal GitLab
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/idms_docs
+      name: Public GitHub Mirror
+
 
 # Theme configuration
 theme:
@@ -36,7 +47,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.sections
-    - navigation.expand
+   #- navigation.expand  #(expands all sections)
     - search.suggest
     - search.highlight
 
@@ -48,6 +59,10 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
   - def_list
   - footnotes
   - tables
@@ -55,6 +70,7 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
        - name: mermaid
@@ -69,27 +85,45 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Introduction:
-      - Overview: introduction/overview.md
-      - Architecture: introduction/architecture.md
-      - Licensing: introduction/licensing.md
+      - What is iRODS: introduction/what_is_irods.md
+      - What is iDMS: introduction/
+      - Definitions: introduction/definitions.md
 
   - User Manual:
+    - iDMS-Web User Interface:
       - Getting Started: introduction/irods.md
       - iRODS in windows explorer: user-manual/access_irods_from_windows_explorer.md
-      - Starting a new project: user-manual/starting_a_new_project
+      - Starting a new project: user-manual/starting_a_new_project.md
       - Add metadata to project: user-manual/adding_metadata_to_a_project.md
-    #  - Manual upload in iDMS: user-manual/
-    #  - Use iget to get data from irods: user-manual/
-    #  - Mount irods project on the headnodes: user-manual/
-    #  - Using data with Python, R or Snakemake: user-manual/
-    #  - Find a fastq file with sample ID: 
+      - Manual upload in iDMS: user-manual/manual_upload_in_idms.md
+      - Catalog Metadata: user-manual/catalog_metadata.md
+    - Queries & Scripts:
+      - Use iget to get data from irods: user-manual/use_iget_to_get_data_from_irods.md
+      - Mount irods project on the headnodes: user-manual/mount_irods_project_on_the_headnodes.md
+      - Using data from iRODS directly in your scripts, code or workflows with Python, R and Snakemake: user-manual/using_data_in_your_scripts.md
+      - Find a fastq file with a sample ID: user-manual/iquest.md
+      - Find parent collection(s): user-manual/find_parent_collections.md
+      - Link an uploaded collection to a parent collection: user-manual/link_uploaded_collection_to_parent_collection.md
+    - Pipelines:
+      - Pipeline automation using iRODS: user-manual/pipeline_automation.md
+      - Use iRODS acceptation for testing pipelines: user-manual/use_irods_acc_for_testing_pipeline.md
+     # - Use runsheets for data from multiple collection (tba): user-manual/
+      - How to use metadata on objects: user-manual/how_to_use_metadata_on_objects.md
+      - Reference datasets and where to find and use them: user-manual/reference_datasets.md
+     # - Advanced windows tooling: user-manual/ibridges.md
+    
 
   - Administrators:
-      - Deployment & Infrastructure: administrators/deployment.md
-    #  - iRODS & Persistence: administrators/irods-setup.md
+      - Deployment & Infrastructure: administration/
+      - Errorhandling: administration/
 
-  - Developers:
-      - Contributing Guide: developers/contributing.md
+
+  - Developers:   #https://gitlab.rivm.nl/bioinformatics/DevOps/-/wikis/dms/general
+      - Contributing Guide: developers/
+      - Components & Architecture: 
+        - Jobengine: developers/jobengine.md
+        - iDMS-web plugins: developers/plugins.md
+
     #  - API Reference: developers/api-reference.md
 
   - Courses:
