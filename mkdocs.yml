@@ -92,7 +92,7 @@ nav:
   - User Manual:
     - iDMS-Web User Interface:
       - Getting Started: introduction/irods.md
-      - iRODS in windows explorer: user-manual/access_irods_from_windows_explorer.md
+     # - iRODS in windows explorer: user-manual/access_irods_from_windows_explorer.md
       - Starting a new project: user-manual/starting_a_new_project.md
       - Add metadata to project: user-manual/adding_metadata_to_a_project.md
       - Manual upload in iDMS: user-manual/manual_upload_in_idms.md
@@ -106,7 +106,7 @@ nav:
       - Link an uploaded collection to a parent collection: user-manual/link_uploaded_collection_to_parent_collection.md
     - Pipelines:
       - Pipeline automation using iRODS: user-manual/pipeline_automation.md
-      - Use iRODS acceptation for testing pipelines: user-manual/use_irods_acc_for_testing_pipeline.md
+     # - Use iRODS acceptation for testing pipelines: user-manual/use_irods_acc_for_testing_pipeline.md
      # - Use runsheets for data from multiple collection (tba): user-manual/
       - How to use metadata on objects: user-manual/how_to_use_metadata_on_objects.md
       - Reference datasets and where to find and use them: user-manual/reference_datasets.md
