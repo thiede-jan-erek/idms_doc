@@ -96,7 +96,7 @@ nav:
       - Starting a new project: user-manual/starting_a_new_project.md
       - Add metadata to project: user-manual/adding_metadata_to_a_project.md
       - Manual upload in iDMS: user-manual/manual_upload_in_idms.md
-      - Catalog Metadata: user-manual/catalog_metadata.md
+     # - Catalog Metadata: user-manual/catalog_metadata.md
     - Queries & Scripts:
       - Use iget to get data from irods: user-manual/use_iget_to_get_data_from_irods.md
       - Mount irods project on the headnodes: user-manual/mount_irods_project_on_the_headnodes.md

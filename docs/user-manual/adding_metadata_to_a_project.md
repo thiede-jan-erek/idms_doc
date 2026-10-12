@@ -16,9 +16,11 @@ They can be found in the Project Details page in 2 tabs:
 > Note: Only **Managers** of a project can add or edit metadata. <br/>     Entered metadata will be visible for all users of iDMS, so also users that are not a project user.
 
 ### Project Metadata
-Project metadata is metadata about the project. It can be used for making your project better findable, or [FAIR](https://www.go-fair.org/fair-principles/).
-The **rivm** schema contains metadata used in the metadata catalogue.
-For more information about the connection between Apollo (the RIVM data catalogue) and iRods, see [here](../catalog_metadata).
+Project metadata is metadata about the project. It can be used for making your project better findable, or [:octicons-link-external-24: FAIR](https://www.go-fair.org/fair-principles/).
+
+??? note "RIVM metadata catalogue"
+    The **rivm** schema contains metadata used in the metadata catalogue.
+    For more information about the connection between Apollo (the RIVM data catalogue) and iRODS, see [:octicons-link-external-24: here](https://gitlab.rivm.nl/bioinformatics/docs/-/wikis/DMS/catalog_metadata).
 
 ### Dataset Default Metadata
 Dataset Default metadata can be used as a template for metadata of uploaded datasets. There are no required fields for schemata in this tab, because metadata can differ per uploaded dataset
@@ -47,6 +49,12 @@ The form will be displayed in the editor window (3)
 After filling the required information press 'Save' (5) to store the metadata on iDMS. It is stored on the collection corresponding with the project or dataset uploaded.
 
 > !! Beware: unselecting a schema in the metadata editor wil remove the metadata from the collection (after being warned in the iDMS)
+
+
+## When to
+
+If your project is one where data is handled by automated pipelines, it is probably enough to set your metadata at the project level.
+If you regularly upload data that was made with different scripts (or even manually) and each dataset clearly has its own distinct metadata, then it is recommended to set your metadata on the dataset level.
 
 
 If you have any questions about this, reach out to onderzoeksendataloket@rivm.nl.
