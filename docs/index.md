@@ -28,6 +28,23 @@ The system is decoupled into several dedicated, :simple-git: version-controlled 
 
 ---
 
+## Contacts
+
+
+**Still have questions?** Get more answers from the [:octicons-link-external-24: Research and data loket](http://wiki.rivm.nl/inwiki/bin/view/Onderzoeks+en+Dataloket/WebHome) or ask the bioinformaticians in the [:octicons-link-external-24: teams group](https://teams.microsoft.com/l/team/19%3a63632755c7fc4ee6acab6e3e61b7b233%40thread.tacv2/conversations?groupId=cde5a118-ae37-41d8-9951-ea9c96125362&tenantId=cd8466c6-d7ce-410a-be13-33e40185fdab).
+
+Or mail one of us directly: 
+
+- Erwin van Wieringen (erwin.van.wieringen@rivm.nl), 
+- Jan-Erek Thiede (jan.erek.thiede@rivm.nl), 
+- Robert Verhagen (robert.verhagen@rivm.nl), 
+- Eva Deutekom (eva.deutekom@rivm.nl), 
+- Remie Janssen (remie.janssen@rivm.nl), 
+- Stefan Lobner (stefan.lobner@rivm.nl), 
+- Arthur Knopper (arthur.knopper@rivm.nl), 
+- Vasilis Lemonias (vasilis.lemonias@rivm.nl), 
+- Yuchen Huang (yuchen.huang@rivm.nl)
+
 <!--
 ## Dependencies
 
