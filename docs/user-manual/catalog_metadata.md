@@ -1,6 +1,6 @@
 # Metadata for Apollo
 
-Projects and Datasets in iRods can be registered automatically in the RIVM data catalog [Apollo](https://apollo.rivm.nl/).
+Projects and Datasets in iRods can be registered automatically in the RIVM data catalog [:octicons-link-external-24: Apollo](https://apollo.rivm.nl/).
 Apollo is connected to iRods through the so-called "harvester", which collects metadata from iRods and sends it to Apollo.
 The harvester only collects the metadata that is added specifically for the catalog: all metadata filled in through the metadata editor using the **rivm** schema.
 

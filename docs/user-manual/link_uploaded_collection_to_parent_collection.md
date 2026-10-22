@@ -1,10 +1,11 @@
 If you downloaded data from iRODS and performed manual analyses on it, it is important to maintain proper data governance if you want to upload the data back into iRODS. This means you need to link the new dataset (collection) back to its original source collection in iRODs, i.e. the parent. This wiki will help you set up data governance for an uploaded dataset.
 
 The following steps were taken:
-- You have [downloaded a collection](https://gitlab.rivm.nl/bioinformatics/docs/-/wikis/tools/use-iget-to-get-data-from-irods) from iRODS and started some manual pipeline / scripts on it.
-- You have uploaded the dataset output to iRODS and added the metadata to it, [using the web interface (biorods.rivm.nl)](https://gitlab.rivm.nl/bioinformatics/docs/-/wikis/DMS/Manual-upload-in-NGSweb).
 
-Now you would like to link the manual created collection to the source collection. You can do this via the terminal in the Wetenschappelijke Werkplek, or via the webinterface [iDMS](biorods.rivm.nl).
+- You have [downloaded a collection](../use_iget_to_get_data_from_irods) from iRODS and started some manual pipeline / scripts on it.
+- You have uploaded the dataset output to iRODS and added the metadata to it, [using the web interface](../manual_upload_in_idms).
+
+Now you would like to link the manual created collection to the source collection. You can do this via the terminal in the Wetenschappelijke Werkplek, or via the webinterface [:octicons-link-external-24: iDMS](biorods.rivm.nl).
 
 
 <!--
@@ -34,7 +35,7 @@ units:
 
 B) the web browser:
 
-![image](uploads/024236227a1d630e2ff3537798db6053/image.png)
+![](../../!assets/images/metadata__dataset_id.png)
 _Figure 1_
 
 ### 1.1. One parent collection
@@ -50,8 +51,7 @@ $ imeta set -C /rivmZone/projects/nanlon/240830_VH01799_112_AACGVN7HV_0012_Cellr
 
 Your collection (/rivmZone/projects/nanlon/240830_VH01799_112_AACGVN7HV_0012_Cellranger) is now connected to the parent collection (/rivmZone/projects/nanlon/240830_VH01799_112_AACGVN7HV_0012).
 
-![image](uploads/15051159178fcedd0301d21ac3d77354/image.png)
-_Figure 2_
+![](../../!assets/images/connection_parent_collection.png){: .glightbox title="Figure 2"}
 
 ### 1.2. Multiple parent collections
 If your uploaded collection is comprised of more parent collections, you can add multiple parent collection ids.
@@ -85,12 +85,10 @@ $imeta rm -C /rivmZone/projects/nanlon/240830_VH01799_112_AACGVN7HV_0012_Cellran
 ## 2. From the web-interface with iDMS
 Alternatively, you can navigate to the collection you want to link. From there, go to the `Provenance` tab in the right upper window in iDMS. Click `Add upstream dataset`:
 
-![Provenance.svg](uploads/509d0f2f9a6a94e4c26de385489fe41c/Provenance.svg){width=80%}
-_Figure 3_
+![](../../!assets/images/provenance.svg){width=80%}
 
 In the search bar you can paste/write the collection you want to add as upstream parent collection:
 
-![add_parent](uploads/14d771eabf944b4a3ad7414e4f5379c0/add_parent.png){width=80%}
-_Figure 4_
+![](../../!assets/images/add_parent.png){width=80%}
 
 After you added the collection, you will see the uploaded collection linked to the parent collection, like in Figure 2 above. 

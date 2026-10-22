@@ -9,7 +9,7 @@ Welcome to the official documentation hub for the RIVMs **iRODS Data Management 
 
 iDMS is a modular, scalable data management architecture designed to streamline data processing, storage, and web-based interaction across secure institutional infrastructure.
 
-At the RIVM we use the iDMS internally as :octicons-link-external-24: [biorods](https://biorods.rivm.nl/) to automatically process sequencer data
+At the RIVM we use the iDMS internally as [:octicons-link-external-24: biorods](https://biorods.rivm.nl/) to automatically process sequencer data
 
 ---
 
