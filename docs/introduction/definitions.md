@@ -19,4 +19,11 @@ Pipeline
 Runsheet
 : A set of metainformation (either in a file or as AVUs on a collection) detailing the project, process group, input collections and other parameters to trigger a pipeline run.
 
+Job
+:
 
+Jobengine
+:
+
+Headnode
+: The machines of the HPC a user logs into. From there they can start computation jobs (using for example bsub). These jobs are then executed on different machines, the compute nodes.
