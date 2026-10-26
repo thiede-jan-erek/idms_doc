@@ -86,12 +86,12 @@ nav:
   - Home: index.md
   - Introduction:
       - What is iRODS: introduction/what_is_irods.md
-      - What is iDMS: introduction/
+      - What is iDMS: introduction/what_is_idms.md
       - Definitions: introduction/definitions.md
 
   - User Manual:
     - iDMS-Web User Interface:
-      - Getting Started: introduction/irods.md
+      - Getting Started: user-manual/getting_started.md
      # - iRODS in windows explorer: user-manual/access_irods_from_windows_explorer.md
       - Starting a new project: user-manual/starting_a_new_project.md
       - Add metadata to project: user-manual/adding_metadata_to_a_project.md
